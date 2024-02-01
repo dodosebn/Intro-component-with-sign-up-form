@@ -1,137 +1,196 @@
+
 @import url("https://fonts.google.com/specimen/Poppins");
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+  font-family: "poppins";
+  src: url("https://fonts.google.com/specimen/Poppins");
 }
-:root{
-    --primary-Red: hsl(0, 100%, 74%);
-    --primary-Green: hsl(154, 59%, 51%);
-    --primay-Blue: hsl(248, 32%, 49%);
-    --neutral-DarkBl: hsl(249, 10%, 26%);
-    --neutral-GrayishBl: hsl(246, 25%, 77%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
+:root {
+  --primary-Red: hsl(0, 100%, 74%);
+  --primary-Green: hsl(154, 59%, 51%);
+  --primay-Blue: hsl(248, 32%, 49%);
+  --neutral-DarkBl: hsl(249, 10%, 26%);
+  --neutral-GrayishBl: hsl(246, 25%, 77%);
+}
+body {
+  font-family: "poppins", sans-serif;
+  background-image: linear-gradient(var(--primary-Red), var(--primary-Red)),
+    url("images/bg-intro-desktop.png");
+    background-color: var(--primary-Red);
+  background-size: cover;
+  background-repeat: repeat;
+  background-blend-mode:hue;
+  overflow-x: hidden;
+}
+.form-container{
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    padding: 10em;
     font-family: "poppins", sans-serif;
-    background-image: linear-gradient(var(--primary-Red), var(--primary-Red)), url("images/bg-intro-desktop.png");
-    /* background-color: var(--primary-Red); */
-    background-size: cover;
-background-repeat: repeat;
-    overflow-x: hidden;
-    background-blend-mode: multiply;
 }
-.Form-Cont{
-position: relative;
-align-items: right;
-justify-content: right;
-display: flex;
-top: 9em;
-right: 3em;
-/* padding: 10em; */
-}
-.Form-hold{
+.form-itself{
+    margin-top: 1em;
+    background-color: #fff;
+    width: 30em;
+    height: 27em;
+    border-radius: 7px;
+    justify-content: center;
     align-items: center;
     display: flex;
-    justify-content: center;
-    background-color: #fff;
-    width: 35em;
-    border-radius: 10px;
-height: 34em;
 }
 form {
     width: 300px;
     margin: 0 auto;
-    margin-right: 13em;
-    margin-top: 2em;
-    font-family: "poppins", sans-serif;
-  }
-  
-  .form-group {
-    margin-bottom: 2em;
-  }
-  input[type="button"],
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  .bef-tophold{
-    width: 150%;
-    padding: 1.1em;
+    margin-left: 3.2em;
+}
+.nmp, input[type="button"]{
+    width:130%;
+    padding: 0.8em;
     font-size: 16px;
     border: 1.3px solid #dedede;
     border-radius: 4px;
     outline: none;
     text-indent: 1em;
-  }
-  .bef-cont{
+}
+.form-group{
     position: relative;
-    top: 7.5em;
-    left: 21.5em;
-  }
-  .bef-tophold{
-    border-radius: 10px;
-    border: none;
-    font-size: 1.1em;
-    background-color: var(--primay-Blue);
-    justify-content: center;
-    align-items: center;
-    display: flex ;
-    width: 31.6em;
-    margin: 0 auto;
-       color: #fff;
-       font-weight: 700;
-
-  }
-  .bef-tophold span{
-    font-size: 16px;
-    color:  #ffff;
-    font-weight: 400;
-  }
-  input[type="button"]{
-    background-color: var(--primary-Green);
-    color: #dcfff6;
-  }
-  
-  .form-group p{
-    font-size: 13px;
-margin-left: 1.6em;
+    margin-bottom: 10px;
+}
+.inp-icon .inp{
+    position: absolute;
+    left: 22em;
+    top: 0.7em;
+    width: 1.3em;
+    height: 1.3em;
+    display: none;
+}
+.left{
+    position: relative;
+left: 17.5em;
+font-size: 13px;
+  color: #fff;
+}
+.form-group p {
+    font-size: 12px;
+    padding-left: 1.6em;
     width: 50em;
     color: var(--neutral-GrayishBl);
   }
-  .form-group p a{
+  .form-group p a {
     text-decoration: none;
     color: var(--primary-Red);
     font-weight: 700;
   }
-  /* LEFT SDE */
-  .head-cont{
-padding-left: 10em;
-position: relative;
-  }
-  .head-hold{
-    position: absolute;
-    bottom: 3.6em;
-  }
-.head-hold h1{
-    font-size: 3.3em;
+  button{
+    border: 1px solid var(--primay-Blue);
+    background-color: var(--primay-Blue);
     color: #fff;
-    width: 10em;
-    font-weight: 700;
-    line-height: 1.1em;
+    width: 100%;
+    font-weight: 600;
+    border-radius: 7px;
+    padding: 1em;
+}
+#button{
+    background-color: var(--primary-Green);
+    color: #fff;
+}
+button span{
+    font-weight: 400; 
+    color: #dedede;
+}
+.headline-container{
+    position: relative;
+}
+.headline-hold{
+    position: absolute;
+    bottom: 19em;
+}
+.headline-itself{
+    padding-left: 10em;
+}
+.headline-itself h1{
+    color: #fff;
+    font-size: 2.3em;
+    width: 11em;
+    font-weight: 800;
+    text-align-last:auto;
 }
 .paragraph{
-margin-top: 1.5em;
-}
-.paragraph p{
     width: 30em;
-    color: #dcfff6;
+    color: #dedede;
+    margin-top: 1em;
     line-height: 1.7em;
-    font-weight: 600;
-    font-size: 1em;
 }
-.left{
-  /* width: 20em; */
-  position: absolute;
-  padding-left: 25em;
-  font-size: 12px;
-  color: var(--primary-Red);
+.attribution { text-align: center; font-size: 17px; }
+.attribution a { color: hsl(228, 45%, 44%);  }
+@media(max-width:400px){
+    body{
+    background-image: linear-gradient(var(--primary-Red), var(--primary-Red)),
+      url("images/bg-intro-mobile.png"); 
+  }
+    .headline-hold{
+        bottom: 49em;
+        text-align: center;   
+    }
+    .headline-itself{
+        padding-left: 0;
+    }
+    .headline-itself h1{
+        font-size: 2em;
+        width: 11em;
+        font-weight: 700;
+    }
+    .paragraph{
+        width: 17.6em;
+        text-align: center;
+       margin-left: 2.7em;
+    }
+    .form-container{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+     .form-container{
+        padding: 10em;
+        margin-top: 12em;
+    }
+    .form-itself{
+        width: 20em;
+    }
+    form {
+        margin-left: 2em;
+    }
+    .form-group{
+        margin-bottom: 5px;
+    }
+    .nmp, input[type="button"]{
+        width:90%;
+    }
+    .inp-icon .inp{
+        left: 14.5em;
+    }
+    .left{
+    left: 12.1em;
+    font-size: 10.5px;
+    }
+    .form-group p {
+        padding-left: 1.9em;
+        width: 20em;
+        text-align-last: center;
+        line-height: 1.7em;
+      }
+      button{ 
+        padding: 6em;
+        height: 0.5px;
+        padding-top: 2em;
+        margin-top: 4em;
+        line-height: 1.7em;
+    }
+    .attribution{width: 20em;}
 }

@@ -1,42 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Learn to code by watching others
-
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <section>
+        <div class="form-container">
+          <div class="form-holder">
+            <button>
+              Try it free 7days <span>then $20/mo. thereafter</span>
+            </button>
+            <div class="form-itself">
+              <form action="#" onsubmit=" FormValidation(event);">
+                <div class="form-group">
+                  <div class="inp-icon">
+                    <img
+                      src="./images/icon-error.svg"
+                      id="Fnameimg"
+                      class="inp" />
+                    <input
+                      type="text"
+                      id="Fname"
+                      name="Fname"
+                      class="nmp"
+                      placeholder="First Name" />
+                  </div>
+                  <span class="fname-val left">FirstName cannot be empty</span>
+                </div>
+                <div class="form-group">
+                  <div class="inp-icon">
+                    <img
+                      src="./images/icon-error.svg"
+                      id="Lnameimg"
+                      class="inp" />
+                    <input
+                      type="text"
+                      id="Lname"
+                      name="Lname"
+                      class="nmp"
+                      placeholder="Last Name" />
+                  </div>
+                  <span class="lname-val left">LastName cannot be empty</span>
+                </div>
+                <div class="form-group">
+                  <div class="inp-icon">
+                    <img
+                      src="./images/icon-error.svg"
+                      id="Emailimg"
+                      class="inp" />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="nmp"
+                      placeholder="Email" />
+                  </div>
+                  <span class="email-val left">Email cannot be empty</span>
+                </div>
+                <div class="form-group">
+                  <div class="inp-icon">
+                    <img
+                      src="./images/icon-error.svg"
+                      id="passImg"
+                      class="inp" />
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      class="nmp"
+                      placeholder="Password" />
+                  </div>
+                  <span class="pass-val left">Password cannot be empty</span>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="button"
+                    id="button"
+                    name="button"
+                    value="CLAIM YOUR FREE TRIAL" />
+                </div>
+                <div class="form-group">
+                  <p>
+                    By clicking the button you are agreeing to our
+                    <a href="#">Terms and Services</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="headline-container">
+          <div class="headline-hold">
+            <div class="headline-itself">
+              <h1>Learn to code by watching others</h1>
+              <div class="paragraph">
+                <p>See how experienced developers solve problems in real-time.
+                  watching scripted tutorials is great, but understanding how
+                   developers think is invaluable
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Orji Dominion Ebuebennia</a>.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
