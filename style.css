@@ -1,10 +1,5 @@
 
-@import url("https://fonts.google.com/specimen/Poppins");
-@font-face {
-  font-family: "poppins";
-  src: url("https://fonts.google.com/specimen/Poppins");
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -32,13 +27,12 @@ body {
     align-items: flex-end;
     display: flex;
     padding: 10em;
-    font-family: "poppins", sans-serif;
 }
 .form-itself{
     margin-top: 1em;
     background-color: #fff;
     width: 30em;
-    height: 27em;
+    height: 28em;
     border-radius: 7px;
     justify-content: center;
     align-items: center;
@@ -49,37 +43,36 @@ form {
     margin: 0 auto;
     margin-left: 3.2em;
 }
-.nmp, input[type="button"]{
+.nmp, input[type="submit"]{
     width:130%;
     padding: 0.8em;
-    font-size: 16px;
+    font-size: 1em;
     border: 1.3px solid #dedede;
     border-radius: 4px;
     outline: none;
     text-indent: 1em;
+    font-family: 'Poppins', sans-serif;
 }
-.form-group{
-    position: relative;
-    margin-bottom: 10px;
-}
+.form-group{  position: relative;}
 .inp-icon .inp{
     position: absolute;
     left: 22em;
-    top: 0.7em;
+    top: 1em;
     width: 1.3em;
     height: 1.3em;
     display: none;
 }
 .left{
     position: relative;
-left: 17.5em;
+left: 16em;
 font-size: 13px;
   color: #fff;
 }
 .form-group p {
-    font-size: 12px;
-    padding-left: 1.6em;
-    width: 50em;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 1em;
+    width: 40em;
     color: var(--neutral-GrayishBl);
   }
   .form-group p a {
@@ -89,31 +82,33 @@ font-size: 13px;
   }
   button{
     border: 1px solid var(--primay-Blue);
+    box-shadow: 2px 5px 2px var(--primay-Blue);
     background-color: var(--primay-Blue);
     color: #fff;
     width: 100%;
-    font-weight: 600;
-    border-radius: 7px;
-    padding: 1em;
+    font-family: "poppins", sans-serif;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 1.2em;
 }
 #button{
     background-color: var(--primary-Green);
     color: #fff;
+    border: 1px solid var(--primary-Green);
+    box-shadow: 1px 5px 1px var(--primary-Green);
+    font-size: 1em;
+    border-radius: 7px;
 }
 button span{
-    font-weight: 400; 
+    font-weight: 500; 
     color: #dedede;
 }
-.headline-container{
-    position: relative;
-}
+.headline-container{ position: relative;}
 .headline-hold{
     position: absolute;
     bottom: 19em;
 }
-.headline-itself{
-    padding-left: 10em;
-}
+.headline-itself{   padding-left: 10em;}
 .headline-itself h1{
     color: #fff;
     font-size: 2.3em;
@@ -138,18 +133,16 @@ button span{
         bottom: 49em;
         text-align: center;   
     }
-    .headline-itself{
-        padding-left: 0;
-    }
+    .headline-itself{ padding-left: 0;  }
     .headline-itself h1{
         font-size: 2em;
         width: 11em;
         font-weight: 700;
     }
     .paragraph{
-        width: 17.6em;
+        width: 20em;
         text-align: center;
-       margin-left: 2.7em;
+       margin-left: 1.6em;
     }
     .form-container{
         justify-content: center;
@@ -158,39 +151,39 @@ button span{
     }
      .form-container{
         padding: 10em;
-        margin-top: 12em;
+        margin-top: 17em;
     }
     .form-itself{
+        height: 28em;
         width: 20em;
     }
-    form {
-        margin-left: 2em;
-    }
-    .form-group{
-        margin-bottom: 5px;
-    }
-    .nmp, input[type="button"]{
-        width:90%;
-    }
-    .inp-icon .inp{
-        left: 14.5em;
-    }
+    form {   margin-left: 1.4em;}
+    .form-group{ margin-bottom: -6px; }
+    .nmp, input[type="submit"]{ width:93%; }
+    .inp-icon .inp{ left: 14.5em; }
     .left{
-    left: 12.1em;
+    left: 12em;
+    bottom: 4px;
     font-size: 10.5px;
     }
     .form-group p {
-        padding-left: 1.9em;
-        width: 20em;
+        font-size: 11px;
+        padding-left: 3em;
+        margin-top: 1.4em;
+        width: 23em;
         text-align-last: center;
         line-height: 1.7em;
       }
       button{ 
-        padding: 6em;
-        height: 0.5px;
-        padding-top: 2em;
-        margin-top: 4em;
+        padding: 3em;
+      height: 1em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
         line-height: 1.7em;
+    }
+    button p{
+        width: 11em;
     }
     .attribution{width: 20em;}
 }
